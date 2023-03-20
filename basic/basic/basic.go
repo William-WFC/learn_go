@@ -47,17 +47,22 @@ func euler() {
 
 func triangle() {
 	var a, b int = 3, 4
-	var c int
-	c = int(math.Sqrt(float64(a*a + b*b)))
-	fmt.Println(c)
+
+	fmt.Println(calcTriangle(a, b))
+}
+
+func calcTriangle(a, b int) int {
+	c := int(math.Sqrt(float64(a*a + b*b)))
+	return c
 }
 
 func consts() {
 	const filename = "abc.txt"
 	const a, b = 3, 4
 	var c int
+
 	c = int(math.Sqrt(a*a + b*b))
-	fmt.Println(c)
+	fmt.Println(c, filename)
 }
 
 func enums() {
